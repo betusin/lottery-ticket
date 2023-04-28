@@ -1,2 +1,32 @@
 # Lottery Ticket Hypothesis
-Reproduction of experiments and figures of the paper The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks.
+This repository reproduce some experiments and figures of the paper The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks.
+
+## About pruning
+
+The concept of neural network pruning is to reduce the parameter counts of trained networks, which in turn reduces storage requirements and improves computational performance of inference without compromising accuracy. However, sparse architectures produced by pruning are difficult to train from the start. The lottery ticket hypothesis suggests that randomly initialized feed-forward networks contain subnetworks (winning tickets) that achieve test accuracy comparable to the original network in a similar number of iterations when trained in isolation. These winning tickets have initial weights that make training particularly effective. Through experiments, researchers have consistently found winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10. Above this size, the winning tickets learn faster than the original network and reach higher test accuracy.
+
+# How to run
+
+If you want to run by yourself, you can get results by running
+
+```
+python3 experiment1.py <arch> <dataset>
+```
+
+Where you can ommit arch and dataset, in that case it is default with arch `lenet` and dataset `mnist`.
+
+Options:
+- arch:
+  - `lenet`
+  - `conv2`
+  - `conv4`
+  - `conv6`
+- dataset:
+  - `mnist`
+  - `cifar10`
+  
+Keep in mind you can convlotuional are trained with `cifar10` and lenet with `mnist`.
+
+# Checkpoints
+
+# Results
