@@ -39,3 +39,21 @@ CSV files of data extracted from trained networks for creating figures.
 ## Figures
 
 The resulting figures that confirm the investigated hypothesis.
+
+**Description taken from paper**
+
+Figure 1: The iteration at which early-stopping would occur (left) and the test accuracy at that iteration
+(right) of the Lenet architecture for MNIST when trained starting at various sizes. Dashed lines are randomly sampled
+sparse networks (average of ten trials). Solid lines are winning tickets (average of five trials).
+
+![Figure 1 - weights vs iterations](figures/weights_vs_iteration.png)
+
+![Figure 1 - weights vs accuracy](figures/weights_vs_acc.png)
+
+Figure 3: Test accuracy on Lenet (iterative pruning) as training proceeds. Each curve is the average
+of five trials. Labels are Pm—the fraction of weights remaining in the network after pruning. Error
+bars are the minimum and maximum of any trial.
+
+![Figure 3 - Lenet test accuracy at 21.1, 7.0, 3.6 and 1.9](figures/testacc_21.1.png)
+
+![Figure 3 - Lenet test accuracy at 21.1, 51.3 and 100](figures/testacc_100.0.png)
