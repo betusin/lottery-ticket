@@ -30,7 +30,7 @@ Keep in mind convolutional architectures are trained with `cifar10` and lenet wi
 ## Checkpoints
 
 For easy data extraction and reuse of trained models, there are checkpoints saves with describing filename of which trial, round and iteration they were trained.
-To load and evaluate loss and accuracy of specific checkpoint, you can use `load_and_evaluate` function in `common.py`.
+To load and evaluate loss and accuracy of specific checkpoint, you can use `load_and_evaluate` function in [common.py](https://github.com/betusin/lottery-ticket/blob/main/common.py).
 
 ## Results
 
