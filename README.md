@@ -1,5 +1,5 @@
 # Lottery Ticket Hypothesis
-This repository reproduce some experiments and figures of the paper The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks.
+This repository reproduces experiments and figures of the paper [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](https://arxiv.org/pdf/1803.03635.pdf).
 
 ## About pruning
 
@@ -13,7 +13,7 @@ If you want to run by yourself, you can get results by running
 python3 experiment1.py <arch> <dataset>
 ```
 
-Where you can ommit arch and dataset, in that case it is run in default - architecture `lenet` and dataset `mnist`.
+Where you can ommit arch and dataset, in that case it is ran in default - architecture `lenet` and dataset `mnist`.
 
 Options:
 - arch:
@@ -25,7 +25,7 @@ Options:
   - `mnist`
   - `cifar10`
   
-Keep in mind convolotional architectures are trained with `cifar10` and lenet with `mnist`.
+Keep in mind convolutional architectures are trained with `cifar10` and lenet with `mnist`.
 
 ## Checkpoints
 
