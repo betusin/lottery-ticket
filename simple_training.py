@@ -1,8 +1,6 @@
 import torch
 import common as common
 
-# TODO: your code here.
-
 mnist = common.load_dataset('mnist', 60)
 
 lr = 0.001
