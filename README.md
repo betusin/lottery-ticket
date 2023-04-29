@@ -5,7 +5,7 @@ This repository reproduce some experiments and figures of the paper The Lottery 
 
 The concept of neural network pruning is to reduce the parameter counts of trained networks, which in turn reduces storage requirements and improves computational performance of inference without compromising accuracy. However, sparse architectures produced by pruning are difficult to train from the start. The lottery ticket hypothesis suggests that randomly initialized feed-forward networks contain subnetworks (winning tickets) that achieve test accuracy comparable to the original network in a similar number of iterations when trained in isolation. These winning tickets have initial weights that make training particularly effective. Through experiments, researchers have consistently found winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10. Above this size, the winning tickets learn faster than the original network and reach higher test accuracy.
 
-# How to run
+## How to run
 
 If you want to run by yourself, you can get results by running
 
@@ -27,6 +27,15 @@ Options:
   
 Keep in mind convolotional architectures are trained with `cifar10` and lenet with `mnist`.
 
-# Checkpoints
+## Checkpoints
 
-# Results
+For easy data extraction there are saved checkpoints with describing filename of which trial, round and iteration they were trained.
+To load and evaluate loss and accuracy of specific checkpoint, you can use `load_and_evaluate` function in `common.py`.
+
+## Results
+
+CSV files of data extracted from trained networks for creating figures.
+
+## Figures
+
+The resulting figures that confirm the investigated hypothesis.
