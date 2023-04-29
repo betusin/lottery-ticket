@@ -13,7 +13,7 @@ If you want to run by yourself, you can get results by running
 python3 experiment1.py <arch> <dataset>
 ```
 
-Where you can ommit arch and dataset, in that case it is default with arch `lenet` and dataset `mnist`.
+Where you can ommit arch and dataset, in that case it is run in default - architecture `lenet` and dataset `mnist`.
 
 Options:
 - arch:
@@ -25,7 +25,7 @@ Options:
   - `mnist`
   - `cifar10`
   
-Keep in mind you can convlotuional are trained with `cifar10` and lenet with `mnist`.
+Keep in mind convolotional architectures are trained with `cifar10` and lenet with `mnist`.
 
 # Checkpoints
 
